@@ -2,11 +2,8 @@
 // If there is no license, return an empty string
 
 // function renderLicenseBadge(license) {
-//   if (data.license == "MIT") {
-//     return `
-//     MIT
-//     `;
-//   }
+//   const lisence = data.license;
+//   console.log(license);
 // }
 
 // TODO: Create a function that returns the license link
@@ -24,7 +21,12 @@ function generateMarkdown(data) {
   ${data.description}
   ## Table of Contents
   ***
-  ${data.tableOfContents}
+  - [Installation Instruction](#installation-instructions)
+  - [Usage Information](#usage-information)
+  - [Test Instructions](#test-instructions)
+  - [Contribution](#contribution)
+  - [License](#license)
+  - [Questions?](#questions)
   ## Installation Instructions
   ***
   ${data.installation}
@@ -39,7 +41,7 @@ function generateMarkdown(data) {
   ${data.contribution}
   ## License
   ***
-
+  Still working on this part.
   ## Questions?
   ***
   For all questions please contact me via [email](mailto:${data.email}) OR [github!](https://github.com/${data.github})
